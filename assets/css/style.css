@@ -1,0 +1,641 @@
+/*Fonts pour le theme*/
+
+@font-face {font-family: "Far From Homecoming"; 
+    src: url("../fonts/FarFromHomecoming.woff2") format("woff2"), 
+         url("../fonts/FarFromHomecoming.ttf") format("truetype"); 
+}
+
+@font-face{
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+/*Paramettrage coleurs et ecrans*/
+
+:root{
+    /*Pour les coulers*/
+
+    --redbg: #B11313;
+    --yellowbg: #F1C530;
+    --bluebg: #114C92;
+    --blackbg: #000000;
+    --txtclr: #ffffff;
+
+    /*Pours les ecrans*/
+
+    --xssm: 768px; /*téléphones*/
+    --md: 972px; /*Tablettes*/
+    --lg: 1200px; /*Desktops*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--blackbg);
+    color: #212121;
+    overflow-x: hidden;
+}
+
+a, p, li, label{
+    color: var(--txtclr);
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+h1{
+    font-family: 'Far From Homecoming', sans-serif;
+    color: var(--txtclr);
+    font-size: 94px;
+    text-transform: uppercase;
+}
+
+h2{
+    font-family: 'Far From Homecoming', sans-serif;
+    color: var(--txtclr);
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--txtclr);
+    font-size: 26px;
+}
+
+ p, span {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--txtclr);
+}
+
+body::-webkit-scrollbar{
+    width: 0.4em;
+  }
+  
+  body::-webkit-scrollbar-track{
+    background: #161616;
+    box-shadow: inset 0.05em 0 0 #838383;
+  }
+  body::-webkit-scrollbar-thumb{
+    background: var(--redbg);
+    border-radius: 0.6em;
+    box-shadow: inset 0.15em 0.1em 0.1em rgba(255, 255, 255, 0.5);
+    inset: -015em -0.1em 0.1em rgba(0, 0, 0, 0.3);
+  }
+
+/*--------SECTION POUR ACCUEIL ------*/
+
+#header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background-color: var(--redbg);
+    z-index: 999;
+}
+
+#header ul li{
+    list-style: none;
+    float: left;
+    display: block;
+}
+/*logos du du haut du page*/
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 255px;
+    margin: 18px 0 0 13%;
+    float: left;
+}
+
+#footer-container .logo{
+    position: relative;
+    margin: 0 0 0 -0.4rem;
+}
+
+.marvel-icon{
+    width: 125px;
+    height: 47px;
+}
+
+
+#header nav{
+    float: right;
+    line-height: 90px;
+    margin-right: 7%;
+  }
+
+#header nav img{
+    position: absolute;
+    right: 3rem;
+    margin: 16px auto;
+    width: 50px;
+    height: 50px;
+}
+
+#header ul li{
+    margin-right: 100px;
+}
+
+#header nav a{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#header nav a:hover{
+    color: #e2d9d9;
+}
+
+#spider-container img{
+    width: 100%;
+    object-fit: fill;
+    background-size: cover;
+}
+
+#spider-container .spider-content{
+    position: absolute;
+    top: 16%;
+    left: 14%;
+}
+
+#spider-container h1{
+    font-family: 'Far From Homecoming', sans-serif;
+    color: var(--txtclr);
+    text-transform: uppercase;
+}
+
+#spider-container .spider-content button{
+    margin: 90px 30px 30px 0;
+}
+
+/*---for mobile navigation---*/
+
+#header .mobile-nav, .mobile-menu{
+    display: none;
+}
+
+
+/*== Botton ==*/
+
+.btn-primary{
+    color: var(--redbg);
+    border: none;
+    border-radius: 19px;
+    border: 1px solid var(--txtclr);
+    padding: 17px 30px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover{
+    color: var(--txtclr);
+    border: 1px solid var(--txtclr);
+    background-color: #00000000;
+}
+
+.btn-default{
+    color: var(--txtclr);
+    border: 1px solid var(--txtclr);
+    background-color: #00000000;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-default:hover{
+    color: var(--redbg);
+    border: 1px solid var(--txtclr);
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.btn-send{
+    color: var(--txtclr);
+    border: 1px solid var(--txtclr);
+    background-color: var(--bluebg);
+    border-radius: 20px;
+    padding: 15px 60px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.btn-send:hover{
+    color: var(--txtclr);
+    border: 1px solid var(--txtclr);
+    background-color: #2f6fbd;;
+}
+
+/* MEDIA QUERIES FOR MOBILE*/
+
+/*---Media pour les mobiles---*/
+
+@media (max-width: 960px) {
+
+}
+
+/*--------SECTION POUR LES POSTEURS FILMS ------*/
+
+#spider-container{
+    position: relative;
+    background-color: var(--redbg);
+    width: 100%;
+}
+
+#spider-containe h1{
+    font-family: 'Far From Homecoming', sans-serif;
+    color: var(--txtclr);
+    text-transform: uppercase;
+}
+.poster-section{
+    margin-top: -80px;
+}
+
+.posteur-content{
+    position: relative;
+    width: 44%;
+    margin-left: 14%;
+}
+
+
+#spider-container img{
+    position: inherit;
+}
+
+#spider-container .card-img{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.card-info{
+    margin: 40px auto;
+}
+
+.card-img p{
+    text-align: justify;
+    font-size: 14px;
+}
+
+.card-img .sect1, .sect2, .sect3{
+    width: 19.3%;
+    text-align: center;
+    margin: 55px;
+}
+
+.card-img ul li{
+    list-style: disc;
+    font-size: 14px;
+    text-align: justify;
+    margin-left: 1.5rem;
+}
+
+/* MEDIA QUERIES FOR MOBILE*/
+
+/*---Media pour les mobiles---*/
+
+@media (max-width: 768px) {
+    
+}
+
+/*--------SECTION DEVIENS SPIDERMAN ------*/
+
+#form-container{
+    width: 100%;
+    height: 553px;
+    background: url(../img/bg/img5.png) var(--bluebg) no-repeat;
+    z-index: 5;
+}
+
+#form-container .input-field1{
+    text-align: center;
+}
+
+#form-container .form-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    right: 6rem;
+    width: 40%;
+    padding-top: 50px;
+    
+}
+
+#form-container h1{
+    font-family: 'Far From Homecoming', sans-serif;
+    color: var(--txtclr);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.form-content p{
+    font-size: 14px;
+}
+
+.form-content h2{
+    margin-left: 6rem;
+}
+
+
+/*Mettre tous les inputs aux mêmes formats*/
+
+input{
+    display: block;
+    width: 370px;
+    height: 31px;
+    border-radius: 15px;
+    border: 1px solid var(--blackbg);
+    margin-top: 13px;
+    padding-left: 1rem;
+}
+
+/* MEDIA QUERIES FOR MOBILE*/
+
+/*---Media pour les mobiles---*/
+
+@media (max-width: 768px) {
+    
+}
+
+/*--------SECTION POUR NEWSLETTER ------*/
+
+#newletter-container{
+    width: 100%;
+    height: 827px;
+    background: url(../img/bg/img6.png)  var(--redbg) no-repeat 137% 0;
+}
+
+#newletter-container input{
+    background-color: var(--redbg);
+    border: 1px solid var(--txtclr);
+    margin-top: 1.5em;
+}
+
+input[type="checkbox"]{
+    width: 20px;
+}
+
+#newletter-container label{
+    font-size: 14px;
+    float: right;
+    margin-top: -25px;
+    margin-left: 41px;
+}
+
+#newletter-container h1{
+    font-family: 'Far From Homecoming', sans-serif;
+    color: var(--txtclr);
+    text-transform: uppercase;
+}
+
+#newletter-container p{
+    font-size: 14px;
+    margin: 15px auto;
+}
+#newletter-container .input-field2{
+    margin-top: 70px;
+    width: 420px;
+}
+
+#newletter-container a{
+    text-decoration: underline;
+}
+
+
+#newletter-container input::placeholder{
+    font-size: 14px;
+    color: var(--txtclr);
+}
+
+
+#form-container input::placeholder{
+    font-size: 14px;
+    color: var(--blackbg);
+}
+
+.newletter-content{
+    width: 580px;
+    float: left;
+    margin: 150px 0 0 190px;
+}
+
+.input-field a{
+    text-decoration: underline;
+}
+
+.newletter-content button{
+    margin: 60px 90px;
+}
+
+/* MEDIA QUERIES FOR MOBILE*/
+
+/*---Media pour les mobiles---*/
+
+@media (max-width: 768px) {
+    
+}
+
+/*-------- PIED DU PAGE ------*/
+
+#footer-container {
+    width: 100%;
+    background-color: #000;
+}
+
+#footer-container .footer-menu-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+
+#footer-container img{
+    position: inherit;
+}
+
+#footer-container a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+}
+.logo img{
+    margin-left: 12px;
+}
+
+#footer-container img{
+    margin-top: -15px;
+}
+
+#footer-container ul li{
+    margin-right: 4%;
+}
+
+.language-select {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--redbg);
+    border-radius: 15px;
+    padding: 5px 10px 5px 15px;
+    height: 14px;
+    width: 170px;
+}
+
+select{
+    background-color: var(--redbg);
+    border: none;
+    height: 22px;
+    color: var(--txtclr);
+}
+
+.footer-social{
+        margin-top: 80px;
+}
+
+#footer-container .footer-social img{
+    background-color: var(--redbg);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    margin: 5px;
+}
+
+.footer-social{
+    position: inherit;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+#footer-container .footer-social img:hover{
+    background-color: var(--txtclr);
+    transition:  0.2s ease-in;
+}
+
+.copyright{
+    margin: 30px auto;
+    text-align: center;
+    font-size: 14px;
+    color: #aca5a5;
+}
+
+/*Menu pour mobile*/
+.footer-menu-mobile{
+    padding-top: 20px;
+}
+.footer-nav-mobile{
+    margin: auto 60px;
+}
+.footer-nav-content{
+    margin: 30px 0 0 50px;
+}
+
+.footer-menu-mobile ul li{
+    clear: both;
+}
+
+.mobile-log{
+    position: relative;;
+    margin-top: 120px;
+}
+
+/*Audio icon*/
+
+.audio-btn{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	bottom: 0;
+    right: 0;
+    gap: 0.5rem;
+	right: 20px;
+	bottom: 20px;
+}
+
+.audio-icon img{
+    width: 18px;
+    height: 18px;
+}
+
+.audio-icon{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 50%;
+   background-color: #242121;
+   height: 30px;
+   width: 30px;
+   opacity: 0.5;
+   animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(51, 217, 178, 0.7);
+    }
+    
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(51, 217, 178, 0);
+    }
+    
+    100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 rgba(51, 217, 178, 0);
+    }
+  }
+
+.audio-btn:hover audio{
+    display: block;
+}
+
+audio{
+    display: none;
+    border-radius: 8px;
+    height: 20px;
+}
+
+.audio-icon:hover{
+    cursor: pointer;
+    opacity: 0.3;
+    animation: spin 2s infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+/* MEDIA QUERIES FOR MOBILE*/
+
+/*---Media pour les mobiles---*/
+
+@media (max-width: 768px) {
+    
+}
+
+/*---Media pour les desktops---*/
+
+@media (min-width: 772px) {
+    
+}

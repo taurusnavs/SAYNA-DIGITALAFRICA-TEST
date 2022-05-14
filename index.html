@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sayna & Marvel</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/logo/logo1.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+    
+    <!--========== HEADER =============-->
+
+    <header id="header">
+        <!-- Logo du site -->
+        <div class="logo">
+            <img src="assets/img/logo/logo1.png" alt="Sanya logo">
+            <img src="assets/img/logo/logo2.png" alt="Et logo">
+            <img  class="marvel-icon" src="assets/img/logo/logo3.png" alt="Marvel logo">
+        </div>
+
+        <!-- Menu du site -->
+
+        <!-- For desktop header -->
+        <nav>
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#adversaires">Adversaires</a></li>
+                <li><a href="#heros">Héros</a></li>
+                <li><a href="#about">À propos</a></li>
+            </ul>
+        </nav>
+
+        <!-- For Tablet and mobile header -->
+        <nav class="mobile-nav">
+            <div class="humberger-icon">
+                <img src="assets/img/social-icon/hamburger.png" alt="hemberger image">
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#adversaires">Adversaires</a></li>
+                    <li><a href="#heros">Héros</a></li>
+                    <li><a href="#about">À propos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!--========== SECTION POUR ACCUEIL=============-->
+
+    <section id="spider-container">
+
+        <!--Background image pour accueil-->
+
+        <img class="home-backimage"src="assets/img/bg/img1.png" alt="posteur spiderman">
+        <div class="spider-content">
+            <h1>Spiderman</h1>
+            <button class="btn-primary" value="submit">Voir les Hérons</button>
+            <button class="btn-default" value="submit">Voir les Adversaires</button>
+            <h3>L'araingée sympa du quartier !</h3>
+        </div>
+
+        <!--Section pour les posteurs films-->
+        <div class="poster-section">
+            <div class="posteur-content">
+                <h2>Les spidermans au cinéma</h2>
+                <P>Spiderman a pu bénéficier de reboot qui ont permis d’adapter ses histoires pour chaque génération !</P>
+            </div>
+            <div class="cards">
+                    <!--Posteur film avec commentaires-->
+                <div class="card-img">
+                    <div class="sect1">
+                        <img src="assets/img/section-img/img2.png" alt="posteur film">
+                        <div class="card-info">
+                            <p>Trois films Spiderman sont sortis en 2002, 2004 et 2007. Ils sont produits par Columbia Pictures et Spiderman est incarné par Tobey Maguire. Un quatrième était prévu, mais sera finalement annulé suite à des désaccords entre Sam Raimi (le réalisateur) et Sony.<br>
+                                Cette première trilogie a connu un grand succès auprès des fans et du grand public. L’épisode 3 reste à ce jour un des films les plus chers de l’histoire du cinéma.
+                            </p>
+                        </div>
+                        <button class="btn-primary" value="submit">voir ses adversaires</button>
+                    </div>
+                    <div class="sect2">
+                        <img src="assets/img/section-img/img3.png" alt="posteur film">
+                        <div class="card-info">
+                            <p>The Amazing Spiderman est sorti en 2012, c’est Andrew Garfield qui incarne le héros et Marc Webb à la réalisation. Un deuxième volet, The Amazing Spider-Man : Le destin d'un héros, est sorti en 2014 et a reçu des critiques très mitigées. Un troisième et quatrième film étaient prévus pour 2016 et 2018. Finalement, Marvel et Sony trouvent un accord pour introduire Spiderman dans l'Univers cinématographique Marvel et abandonne ainsi The Amazing Spider-Man.</p>
+                        </div>
+                        <button class="btn-primary" value="submit">voir ses adversaires</button>
+                    </div>
+                    <div class="sect3">
+                        <img src="assets/img/section-img/img4.png" alt="posteur film ">
+                        <div class="card-info">
+                            <p>Spiderman, désormais incarné par Tom Holland, apparaît pour la première fois dans l’univers Marvel avec Captain America : Civil War, sorti en 2016. Par la suite, une trilogie de films lui est consacrée :
+                                <p class="list-film">    
+                                    <ul>
+                                        <li>Spiderman : Homecoming (2017)</li>
+                                        <li>Spiderman : Far From Home (2019)</li>
+                                        <li>Spiderman : No Way Home (2021)</li>
+                                    </ul>
+                                </p>
+                                <p>
+                                    Le héro est également présent dans Avengers Infinity War et Avengers End Game, combattant au côté des Avengers.
+                                </p>
+                        </div>
+                        <button class="btn-primary" value="submit">voir ses adversaires</button>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+
+    <!--========== SECTION POUR DEVIENS SPIDERMAN =============-->
+    <section id="form-container">
+        <div class="form-content">
+            <h2>Deviens Spiderman !</h2>
+            <p>Rempli le formulaire ci-dessous afin de recevoir ton propre costume.</p>
+            <div class="input-field1">
+                <form action="">
+                    <input type="text" name="" placeholder="Nom">
+                    <input type="text" name="" placeholder="Prénom">
+                    <input type="text" name="" placeholder="Taille (cm)">
+                    <input type="text" name="" placeholder="Poids (kg)">
+                    <input type="email" name="" placeholder="Adrese email">
+                </form>
+                <button class="btn-send" type="submit" name="submit">Envoyer</button>
+            </div>
+        </div>
+    </section>
+
+    <!--========== SECTION INSCRIT TOI A LA NEWSLETTER =============-->
+    <section id="newletter-container">
+        <div class="newletter-content">
+            <h2>inscrit toi à la newletter !</h2>
+            <p>L’univers de l’araignée justicière te passionne ? Reste au courant des dernières
+            actualités grâce à notre newsletter ! 
+            </p>
+            <form action="" class="input-field2">
+                <input type="text" name="" placeholder="Nom">
+                <input type="email" name="" placeholder="Adrese email">
+                <input type="checkbox" name="newsletter" id="newsletter"><label for="newsletter">Je reconnais accepter la <a href="#">politique de confidentialité</a>  de Sayna X Marvel.</label>
+                <button class="btn-primary" type="submit">S'inscrie à la newsletter</button>
+            </form>
+        </div>
+    </section>
+
+    <!--========== PIED DU PAGE =============-->
+    <footer id="footer-container">
+            <!--Menu bas de page-->
+            <ul class="footer-menu-content">
+                <li><a href="#mobile">Mobile app</a></li>
+                <li><a href="#politique">Politique de confidentialité</a></li>
+                <li><a href="#cookies">Cookies</a></li>
+                <li class="logo">
+                    <a href="#spider-container">
+                        <div class="logo">
+                            <img src="assets/img/logo/logo1.png" alt="Sanya logo">
+                            <img src="assets/img/logo/logo2.png" alt="Et logo">
+                            <img  class="marvel-icon" src="assets/img/logo/logo3.png" alt="Marvel logo">
+                        </div>
+                    </a>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">Blog</a></li>
+
+                <!--Selection langue-->
+                <li class="language-select">
+                    <label for="langue">Langue</label>
+                    <select name="langue" id="langue">
+                        <option value="" selected="selected"></option>
+                        <option value="fr">Français</option>
+                        <option value="ang">Anglais</option>
+                    </select>
+                </li>     
+            </ul>
+
+        <!--Social media bas de page-->
+        <div class="footer-social">
+            <a href="#"><img src="assets/img/social-icon/logof.png" alt="icon facebook"></a>
+            <a href="#"><img src="assets/img/social-icon/logoi.png" alt="icon instragram"></a>
+            <a href="#"><img src="assets/img/social-icon/logoy.png" alt="icon youtube"></a>
+            <a href="#"><img src="assets/img/social-icon/logot.png" alt="icon tweeter"></a>
+        </div>
+
+        <!--Copyright-->
+        <p class="copyright">&copy;SaynaXMarvel, Inc.2022. We love our users !</p>
+
+        <script>
+            var vAudio = document.getElementById("divAudio");
+            function playMusic()
+            {
+               vAudio.play();
+            }
+         </script>
+    </footer>
+
+    <!--Audio to autoplay-->
+    <div class="audio-btn">
+        <audio controls autoplay loop id="divAudio">
+            <source src="assets/media/audio1.mp3" type="audio/mp3">
+        </audio>
+        <span class="audio-icon">
+            <img src="assets/img/audio-icon/player.png" alt="">
+        </span>
+    </div>
+</body>
+</html>
