@@ -106,7 +106,9 @@ body::-webkit-scrollbar{
     float: left;
     display: block;
 }
+
 /*logos du du haut du page*/
+/*state*/
 
 .logo{
     display: flex;
